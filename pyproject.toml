@@ -3,18 +3,12 @@ name = "hexlet-code"
 version = "0.1.0"
 description = ""
 authors = ["DanilMullakhmetov <danilmullakhmetov@gmail.com>"]
-packages = [
-  { include = "brain_games" },
-]
-
-[tool.poetry.scripts]
-brain-games = "brain_games.scripts.brain_games:main"
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
 
-[tool.poetry.dev-dependencies]
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
+requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
