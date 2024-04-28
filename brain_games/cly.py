@@ -1,6 +1,6 @@
-def welcome_user():
-  name = input('May I have your name? ')
-  return f'Hello, {name}!'
+import prompt
 
-greeting = welcome_user()
-print(greeting)
+
+def welcome_user():
+  name = prompt.string('May I have your name? ')
+  print(f"Привет, {name}!")
