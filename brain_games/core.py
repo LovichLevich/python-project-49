@@ -12,16 +12,15 @@ def game_logic(data):
     print(f"Hello, {user_name}!")
     print(data.questions)
     correct_count = START_COUNTER
-    number_in_question = {data.random_number}
-    while correct_count < LIMIT_ROUND:
-        print(f"Question: {number_in_question}")
+    for _ in range(LIMIT_ROUND):
+        number, correct_answer = data.number_in_questions()
+        print(f'Question: {number}')
         user_answer = prompt.string('Your answer: ')
-        if data.correct_answer == user_answer:
-            correct_count += STEP_COUNT
+        if  correct_answer == user_answer:
             print("Correct!")
         else:
-            print(f"{user_answer} is the wrong answer")
-            print(f"The correct answer was {data.correct_answer}.")
+            print(f"{user_answer} is the wrong answer;(."
+                  f"The correct answer was {data.correct_answer}.")
             print(f"Let's try again, {user_name}!")
             return
     print(f"Congratulations, {user_name}!")
