@@ -16,7 +16,7 @@ def game_logic(data):
         number, correct_answer = data.number_in_questions()
         print(f'Question: {number}')
         user_answer = prompt.string('Your answer: ')
-        if  correct_answer == user_answer:
+        if correct_answer == user_answer:
             print("Correct!")
         else:
             print(f"{user_answer} is the wrong answer;(."
