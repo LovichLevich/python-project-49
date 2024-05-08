@@ -6,8 +6,10 @@ RAND_NUMBER_MAX = 50
 
 questions = 'What number is missing in the progression?'
 
+
 def generate_random_number():
     return random.randint(RAND_NUMBER_MIN, RAND_NUMBER_MAX)
+
 
 def number_in_questions():
     start_number = random.randint(RAND_NUMBER_MIN, RAND_NUMBER_MAX)

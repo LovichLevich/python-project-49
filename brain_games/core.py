@@ -11,7 +11,6 @@ def game_logic(data):
     user_name = prompt.string('May I have your name? ')
     print(f"Hello, {user_name}!")
     print(data.questions)
-    correct_count = START_COUNTER
     for _ in range(LIMIT_ROUND):
         number, correct_answer = data.number_in_questions()
         print(f'Question: {number}')
