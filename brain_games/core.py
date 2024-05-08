@@ -20,7 +20,7 @@ def game_logic(data):
             print("Correct!")
         else:
             print(f"{user_answer} is the wrong answer;(."
-                  f"The correct answer was {data.correct_answer}.")
+                  f"The correct answer was {correct_answer}.")
             print(f"Let's try again, {user_name}!")
             return
     print(f"Congratulations, {user_name}!")
