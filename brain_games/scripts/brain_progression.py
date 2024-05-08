@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 from brain_games.core import game_logic 
-from brain_games.games.game_gcd import gcd
+from brain_games.games.game_progression import progression
 
 
 def main():
-    game_logic(gcd)
+    game_logic(progression)
     
     
 if __name__ == '__main__':
