@@ -18,4 +18,5 @@ def number_in_questions():
     random_index = random.randint(0, len(number) - 1)
     correct_answer = str(number[random_index])
     number[random_index] = ".."
+    number = " ".join(map(str, number))
     return number, correct_answer
