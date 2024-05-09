@@ -5,6 +5,7 @@ RAND_NUMBER_MAX = 100
 
 questions = 'Answer "yes" if the number is even, otherwise answer "no".'
 
+
 def answer_in_questions(number):
     return number % 2 == 0
 
