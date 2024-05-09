@@ -17,10 +17,9 @@ def number_in_questions():
 
 
 def answer_in_questions(number):
-    if number > 1:
-        for n in range(2, number):
-            if (number % n) == 0:
-                return False
-        return True
-    else:
+    if number <= 1:
         return False
+    for n in range(2, number):
+        if (number % n) == 0:
+            return False
+    return True
