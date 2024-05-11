@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-from brain_games.cly import welcome_user
+from brain_games.cli import welcome_user
 
 
 def main():
@@ -7,5 +7,5 @@ def main():
     welcome_user()
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
