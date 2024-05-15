@@ -7,7 +7,7 @@ PROGRESSION_LENGTHT = 10
 MIN_STEP_IN_PROGRESSION = 1
 MAX_STEP_IN_PROGRESSION = 5
 
-QUESTIONS = 'What number is missing in the progression?'
+QUESTION = 'What number is missing in the progression?'
 
 
 def create_numbers_in_question():
@@ -17,5 +17,5 @@ def create_numbers_in_question():
     random_index = random.randint(0, len(number) - 1)
     correct_answer = str(number[random_index])
     number[random_index] = '..'
-    number = ' '.join(map(str, number))
-    return number, correct_answer
+    game_question = ' '.join(map(str, number))
+    return game_question, correct_answer

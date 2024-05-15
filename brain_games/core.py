@@ -1,19 +1,17 @@
 import prompt
 
 
-LIMIT_ROUND = 3
-STEP_COUNT = 1
-START_COUNTER = 0
+ROUNDS_COUNT = 3
 
 
-def game_logic(game):
+def game_generate(game):
     print('Welcome to the Brain Games!')
     user_name = prompt.string('May I have your name? ')
     print(f'Hello, {user_name}!')
-    print(game.QUESTIONS)
-    for _ in range(LIMIT_ROUND):
-        number, correct_answer = game.create_numbers_in_question()
-        print(f'Question: {number}')
+    print(game.QUESTION)
+    for _ in range(ROUNDS_COUNT):
+        game_question, correct_answer = game.create_numbers_in_question()
+        print(f'Question: {game_question}')
         user_answer = prompt.string('Your answer: ')
         if correct_answer == user_answer:
             print('Correct!')
